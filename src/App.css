@@ -1,0 +1,107 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  background-color: #333;
+  margin: 0;
+  font-family: Arial, sans-serif;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  min-height: 100vh;
+}
+
+.main-container {
+  height: 500px; /* You can adjust this height as needed */
+  width: 350px;
+  background-color: purple;
+  padding: 20px;
+  border-radius: 5px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  overflow-y: auto; /* Add vertical scrollbar when content overflows */
+}
+
+.app-heading {
+  padding: 4px;
+  color: white;
+  text-align: center;
+}
+
+.input-box-todo {
+  width: 100%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 0; /* Remove rounded corners */
+  font-size: 16px;
+  margin-bottom: 10px;
+  transition: border-color 0.3s, background-color 0.3s; /* Add background-color transition */
+}
+
+.input-box-todo:focus {
+  border-color: #007bff; /* Highlight the input when focused */
+}
+.input-box-todo:hover {
+  background-color: #f5f5f5; /* Light gray background on hover */
+}
+
+.input-container {
+  display: flex;
+  align-items: center; /* Vertically center items */
+}
+.input-box-todo {
+  flex: 1; /* Take up remaining space */
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px; /* Add margin to separate input and button */
+  transition: border-color 0.3s, background-color 0.3s;
+}
+.input-box-todo:focus {
+  border-color: #007bff;
+}
+
+.input-box-todo:hover {
+  background-color: #f5f5f5;
+}
+.add-btn {
+  background-color: #007bff;
+  color: #fff;
+  border: none;
+  border-radius: 50%; /* Makes it circular */
+  width: 40px;
+  height: 40px;
+  font-size: 18px;
+  cursor: pointer;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  transition: background-color 0.3s;
+}
+.add-btn:hover {
+  background-color: #0056b3;
+}
+
+.item-box {
+  background-color: white;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  font-size: 16px;
+  margin-right: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.item-text {
+  flex: 1;
+}
+
+.icon-delete {
+  cursor: pointer;
+  color: red; /* You can adjust the color as desired */
+}
